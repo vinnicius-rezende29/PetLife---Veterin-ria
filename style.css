@@ -193,3 +193,136 @@ footer .col-3 {
 .copyright a {
   color: #FF9A6C;
 }
+/* Estilos para telas menores que 768px */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.active {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  nav.active a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  nav.active a:hover {
+    background-color: #f4f4f4;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  section img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  section div {
+    text-align: center;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* Estilos para telas maiores que 768px */
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  nav a {
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #f4f4f4;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  section img {
+    width: 45%;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  section div {
+    width: 45%;
+    text-align: left;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 30%;
+    text-align: left;
+  }
+}
+
+/* Estilos para telas maiores que 1024px */
+@media screen and (min-width: 1024px) {
+  section img {
+    width: 50%;
+  }
+
+  section div {
+    width: 45%;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 25%;
+  }
+}
+
